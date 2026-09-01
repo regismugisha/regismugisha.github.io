@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex | Cybersecurity & Full-Stack Engineer</title>
+    <meta name="description" content="Cybersecurity specialist, ML engineer, full-stack developer, and IoT creator. Building secure, intelligent systems from hardware to cloud.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>REX<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="fade-up">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                I build <span class="text-gradient">secure</span>, <span class="text-gradient">intelligent</span><br>systems from <span class="text-gradient">silicon to cloud</span>.
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                Cybersecurity engineer &bull; Machine Learning practitioner &bull; Full-Stack developer &bull; IoT architect<br>
+                I bridge the gap between hardware, software, and security &mdash; delivering end-to-end solutions that are robust, smart, and production-ready.
+            </p>
+            <div class="hero-cta" data-animate="fade-up" data-delay="300">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                <div class="stat">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">IoT Projects Shipped</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Penetration Tests Completed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">AI Tools Deployed</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Projects that <span class="text-gradient">solve real problems</span></h2>
+                <p class="section-desc">Each project is a deep dive &mdash; from threat modeling and sensor architecture to neural network design and deployment.</p>
+            </div>
+
+            <!-- Project 1 -->
+            <article class="project-card" data-animate="fade-up">
+                <div class="project-card-inner">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Cybersecurity</span>
+                            <span class="project-tag">IoT</span>
+                        </div>
+                        <h3 class="project-title">Smart Home Security Fortress</h3>
+                        <div class="project-star">
+                            <div class="star-block">
+                                <h4>Situation</h4>
+                                <p>Consumer IoT devices were riddled with vulnerabilities &mdash; default credentials, unencrypted traffic, and exposed APIs. Over 70% of smart home breaches exploited these gaps.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Task</h4>
+                                <p>Design and build an end-to-end secure IoT ecosystem for smart homes that detects, prevents, and responds to threats in real time.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Action</h4>
+                                <p>Engineered a custom firmware with mutual TLS authentication, deployed a local NIDS (Network Intrusion Detection System) on a Raspberry Pi gateway, built a real-time dashboard with MQTT + Node.js, and implemented automated anomaly detection using Python ML models running at the edge.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Result</h4>
+                                <p>Reduced attack surface by <strong>94%</strong>. Detected 100% of simulated intrusion attempts within <strong>1.2 seconds</strong>. Open-sourced the firmware, garnering <strong>800+ GitHub stars</strong> in the first month.</p>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-value">94%</span><span class="metric-label">Attack Surface Reduction</span></div>
+                            <div class="metric"><span class="metric-value">1.2s</span><span class="metric-label">Threat Detection Time</span></div>
+                            <div class="metric"><span class="metric-value">800+</span><span class="metric-label">GitHub Stars</span></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-animate="fade-up">
+                <div class="project-card-inner">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Full-Stack</span>
+                        </div>
+                        <h3 class="project-title">AI-Powered Network Threat Analyzer</h3>
+                        <div class="project-star">
+                            <div class="star-block">
+                                <h4>Situation</h4>
+                                <p>Enterprise SOC teams were drowning in false positives &mdash; spending 40% of their time triaging alerts that weren't real threats. Alert fatigue was causing analysts to miss genuine incidents.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Task</h4>
+                                <p>Build an intelligent system that classifies network traffic, identifies threats with high precision, and presents actionable intelligence through a modern dashboard.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Action</h4>
+                                <p>Trained a Random Forest + LSTM hybrid model on the CICIDS2017 and UNSW-NB15 datasets. Engineered a Python/Flask API backend serving real-time predictions. Built a React + D3.js frontend for live traffic visualization. Containerized everything with Docker and deployed on AWS ECS.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Result</h4>
+                                <p>Achieved <strong>97.3% detection accuracy</strong> with a <strong>0.8% false positive rate</strong> (down from industry average of ~15%). Reduced mean-time-to-detect from 4 hours to <strong>under 30 seconds</strong>. Processing <strong>10K+ events/sec</strong> in production.</p>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-value">97.3%</span><span class="metric-label">Detection Accuracy</span></div>
+                            <div class="metric"><span class="metric-value">0.8%</span><span class="metric-label">False Positive Rate</span></div>
+                            <div class="metric"><span class="metric-value">10K+</span><span class="metric-label">Events/Second</span></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-animate="fade-up">
+                <div class="project-card-inner">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">Robotics</span>
+                            <span class="project-tag">Smart Home</span>
+                        </div>
+                        <h3 class="project-title">IoT Robotics &amp; Smart Home Systems</h3>
+                        <div class="project-star">
+                            <div class="star-block">
+                                <h4>Situation</h4>
+                                <p>Most smart home products were expensive, closed-source, and fragmented &mdash; devices from different brands couldn't talk to each other, and users had to juggle multiple apps to control their home.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Task</h4>
+                                <p>Build a complete, open smart home automation system that unifies all devices under one platform &mdash; with remote control, automation routines, and a clean, intuitive interface.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Action</h4>
+                                <p>Developed a full-stack smart home system using ESP32 microcontrollers + MQTT for device communication. Built a Node.js backend hub and a custom web dashboard for real-time control and monitoring. Integrated voice control, motion sensing, and energy tracking, with automation routines for lighting, climate, and security. Added ML-based anomaly detection to flag unusual power usage.</p>
+                            </div>
+                            <div class="star-block">
+                                <h4>Result</h4>
+                                <p>Created a fully working smart home covering <strong>lighting, climate, and security</strong>. Reduced manual home control by <strong>90%</strong> through automation routines. All devices operate seamlessly over open protocols with a single dashboard. Project won <strong>1st place</strong> at university IoT hackathon.</p>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-value">90%</span><span class="metric-label">Automation Coverage</span></div>
+                            <div class="metric"><span class="metric-value">1 app</span><span class="metric-label">Unified Control</span></div>
+                            <div class="metric"><span class="metric-value">1st</span><span class="metric-label">University IoT Hackathon</span></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-animate="fade-right">
+                    <div class="about-image-wrapper">
+                        <img src="rex_image.png" alt="Rex - Cybersecurity & Full-Stack Engineer">
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+                <div class="about-content" data-animate="fade-left">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">The person behind <span class="text-gradient">the code</span></h2>
+                    <div class="about-text">
+                        <p>I'm Rex &mdash; a multi-disciplinary technologist who lives at the intersection of security, intelligence, and connected systems. My journey started with tearing apart electronics and putting them back together wrong. Then I discovered networking. Then I discovered code. Then I discovered that the best systems are the ones where all three converge.</p>
+                        <p>Today, I architect end-to-end solutions: I've conducted penetration tests that uncovered critical vulnerabilities in production systems, built IoT networks that run on $18 hardware, trained ML models that detect threats faster than commercial tools, and shipped full-stack applications that serve real users.</p>
+                        <p>I don't just write code &mdash; I think in attack vectors, design in data flows, and build with both hands on the keyboard. Whether it's hardening a network, training a neural network, soldering a PCB, or designing a pixel-perfect UI &mdash; I approach every problem with the same rigor: <strong>understand the system, break it, rebuild it stronger.</strong></p>
+                    </div>
+                    <div class="about-details">
+                        <div class="about-detail">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Open to Remote & On-site</span>
+                        </div>
+                        <div class="about-detail">
+                            <span class="detail-label">Focus</span>
+                            <span class="detail-value">Security-First Full-Stack Systems</span>
+                        </div>
+                        <div class="about-detail">
+                            <span class="detail-label">Philosophy</span>
+                            <span class="detail-value">Break It. Rebuild It. Harden It.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Technical Arsenal</span>
+                <h2 class="section-title">Skills & <span class="text-gradient">technologies</span></h2>
+            </div>
+            <div class="skills-grid" data-animate="fade-up">
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <ul>
+                        <li>Penetration Testing</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Network Security</li>
+                        <li>Threat Modeling</li>
+                        <li>SIEM / NIDS</li>
+                        <li>OWASP / CVE Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h3>Machine Learning & AI</h3>
+                    <ul>
+                        <li>Python / TensorFlow / PyTorch</li>
+                        <li>Scikit-learn / XGBoost</li>
+                        <li>Computer Vision</li>
+                        <li>NLP / LLM Integration</li>
+                        <li>Model Deployment (MLOps)</li>
+                        <li>Data Engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <ul>
+                        <li>React / Next.js / Vue</li>
+                        <li>Node.js / Express / FastAPI</li>
+                        <li>PostgreSQL / MongoDB / Redis</li>
+                        <li>REST / GraphQL / WebSockets</li>
+                        <li>Docker / Kubernetes / CI/CD</li>
+                        <li>AWS / GCP / Azure</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <h3>IoT & Hardware</h3>
+                    <ul>
+                        <li>ESP32 / Arduino / Raspberry Pi</li>
+                        <li>LoRa / Zigbee / MQTT</li>
+                        <li>PCB Design (KiCad)</li>
+                        <li>Firmware Development (C/C++)</li>
+                        <li>Mesh Networking</li>
+                        <li>Sensor Integration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    </div>
+                    <h3>Networking & Systems</h3>
+                    <ul>
+                        <li>TCP/IP / DNS / DHCP</li>
+                        <li>Firewall / VPN / Proxy</li>
+                        <li>Linux Admin (Debian, RHEL, Arch)</li>
+                        <li>Windows Server / Active Directory</li>
+                        <li>Bash / PowerShell Scripting</li>
+                        <li>Infrastructure as Code</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                    </div>
+                    <h3>Design & Creative</h3>
+                    <ul>
+                        <li>Figma / Adobe XD</li>
+                        <li>UI/UX Design</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Visual Design</li>
+                        <li>Design Systems</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-inner" data-animate="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's build something <span class="text-gradient">extraordinary</span></h2>
+                <p class="section-desc">I'm actively looking for roles where I can break things, build them back stronger, and ship products that matter. Send me a message &mdash; I reply within 24 hours.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="from_name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="from_email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Job opportunity, collaboration, security audit...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-submit" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display:none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spinner"><circle cx="12" cy="12" r="10" stroke-dasharray="30" stroke-dashoffset="10"/></svg>
+                            Sending...
+                        </span>
+                        <span class="btn-success" style="display:none;">Sent!</span>
+                    </button>
+                </form>
+
+                <div class="form-status" id="formStatus"></div>
+
+                <div class="contact-links">
+                    <a href="mailto:regismugisha40@gmail.com" class="contact-link-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        regismugisha40@gmail.com
+                    </a>
+                    <a href="https://github.com/regismugisha" target="_blank" rel="noopener" class="contact-link-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>REX<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Securing systems. Training models. Shipping code.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Rex. Built from scratch, as always.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
